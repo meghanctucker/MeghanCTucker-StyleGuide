@@ -513,6 +513,21 @@ ul {
 In this file only apply styles to 3 elements: Universal, UL, P
 ***********/
 /**********
+Font Variables
+***********/
+/**********
+Color Variables
+***********/
+/**********
+Breakpoint Variables
+***********/
+/**********
+Media Queries
+***********/
+/**********
+Flexbox Settings
+***********/
+/**********
 links partials
 ***********/
 /**********
@@ -525,10 +540,7 @@ Headlines Partials
 Nav Items
 ***********/
 /**********
-Media Queries
-***********/
-/**********
-Flexbox Settings
+Buttons
 ***********/
 .btn--info, .btn--warning, .btn--error, .btn--success, .btn--default {
   background-color: blue;
@@ -538,6 +550,16 @@ Flexbox Settings
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
+}
+
+.headline--secondary {
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+}
+
+.headline--secondary {
+  font-family: roboto, sans-serif;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=output.css.map */
