@@ -16,6 +16,23 @@ $bold-font-weight: 700;
 Color Variables
 ***********/
 
+$fountain-blue: #52bab3;
+$emerald: #5ece75;
+$sunglo: #e67478;
+$coral: #ff784f;
+$purple-majesty: #9279c3;
+
+
+//UI colors
+
+$ui-colors: (
+  default: $fountain-blue,
+  success: $emerald,
+  error: $sunglo,
+  warning: $coral, 
+  info: $purple-majesty
+);
+
 /**********
 Breakpoint Variables
 ***********/

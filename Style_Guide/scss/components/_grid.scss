@@ -1,0 +1,16 @@
+.container{
+  @include center;
+}
+
+.grid__row {
+  @include center;
+  text-align: center;
+}
+
+.headline--secondary, .headline--primary, .card{
+  text-align: left;
+}
+
+.centered {
+  @include center;
+}

@@ -1,4 +1,7 @@
 .btn {
+    @include bg-colors($ui-colors);
+    display: block;
+    texkt-align: center;
   &--default {
     @extend %btn;
   }

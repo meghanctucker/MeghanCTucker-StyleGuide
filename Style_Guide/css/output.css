@@ -521,6 +521,12 @@ Color Variables
 /**********
 Breakpoint Variables
 ***********/
+/*********
+Color Mixins
+***********/
+/**********
+centered
+***********/
 /**********
 Media Queries
 ***********/
@@ -543,13 +549,38 @@ Nav Items
 Buttons
 ***********/
 .btn--info, .btn--warning, .btn--error, .btn--success, .btn--default {
-  background-color: blue;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
+}
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid__row {
+  width: 90%;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.headline--secondary, .headline--primary, .card {
+  text-align: left;
+}
+
+.centered {
+  width: 90%;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .headline--secondary {
@@ -560,6 +591,37 @@ Buttons
 .headline--secondary {
   font-family: roboto, sans-serif;
   font-weight: 700;
+}
+
+.blockquote {
+  border-left: 10px solid blue;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: block;
+  texkt-align: center;
+}
+.btn--default {
+  background-color: #52bab3;
+}
+.btn--success {
+  background-color: #5ece75;
+}
+.btn--error {
+  background-color: #e67478;
+}
+.btn--warning {
+  background-color: #ff784f;
+}
+.btn--info {
+  background-color: #9279c3;
 }
 
 /*# sourceMappingURL=output.css.map */
