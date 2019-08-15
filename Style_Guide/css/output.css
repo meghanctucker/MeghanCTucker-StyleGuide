@@ -520,6 +520,7 @@ Color Variables
 ***********/
 /**********
 Breakpoint Variables
+#52bab3
 ***********/
 /*********
 Color Mixins
@@ -555,6 +556,7 @@ Buttons
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
+  width: 90%;
 }
 
 .container {
@@ -583,25 +585,78 @@ Buttons
   margin-right: auto;
 }
 
-.headline--secondary {
-  font-family: roboto, sans-serif;
-  font-weight: 300;
+p {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  color: grey;
+}
+
+.headline--primary {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 700;
+  color: #66f5bc;
 }
 
 .headline--secondary {
-  font-family: roboto, sans-serif;
-  font-weight: 700;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 100;
+  color: grey;
 }
 
 .blockquote {
-  border-left: 10px solid blue;
+  border-left: 10px solid #66f5bc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
+  color: grey;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: grey;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 300;
+}
+
+.grid__col--12.theme__colors {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  color: #676767;
+  text-align: left;
+  background-color: #66f5bc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.link {
+  color: #45e0f7;
+  text-decoration: none;
+}
+
+.form__label--hidden {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 10px solid #66f5bc;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+.form__input {
+  visibility: hidden;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+}
+
+.nav__item {
+  padding: 5px;
+  margin: 5px;
 }
 
 .btn {
@@ -609,7 +664,7 @@ Buttons
   texkt-align: center;
 }
 .btn--default {
-  background-color: #52bab3;
+  background-color: #45e0f7;
 }
 .btn--success {
   background-color: #5ece75;
@@ -622,6 +677,10 @@ Buttons
 }
 .btn--info {
   background-color: #9279c3;
+}
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=output.css.map */

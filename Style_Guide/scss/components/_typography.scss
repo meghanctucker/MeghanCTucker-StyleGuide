@@ -1,15 +1,63 @@
+p {
+  font-family: $primary-font-family;
+  font-weight: $reg-font-weight;
+  color: $main-font-color;
+}
+
+.headline--primary {
+  font-family: $primary-font-family;
+  font-weight: $bold-font-weight;
+  color: $alt-color;
+}
+
 .headline--secondary {
+  font-family: $primary-font-family;
+  font-weight: $thin-font-weight;
+  color: $main-font-color;
+}
+
+.blockquote {
+  border-left: 10px solid $alt-color;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  color: $main-font-color;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: $main-font-color;
   font-family: $primary-font-family;
   font-weight: $light-font-weight;
 }
 
-.headline--secondary {
+//need to change to target all .grid__col--# with .theme__colors class
+.grid__col--12.theme__colors {
   font-family: $primary-font-family;
-  font-weight: $bold-font-weight;
+  font-weight: $reg-font-weight;
+  color: darken($main-font-color, 10%);
+  text-align: left;
+  background-color: $alt-color;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 
-.blockquote {
-  border-left: 10px solid blue;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
+.link{
+  color: $turquise-blue;
+  text-decoration: none;
+}
+
+.form__label--hidden{
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 10px solid $alt-color;
+  font-family: $primary-font-family;
+  font-weight: $reg-font-weight;
+  color: darken($main-font-color, 20%);
+
+}
+
+.form__input {
+  visibility: hidden;
 }

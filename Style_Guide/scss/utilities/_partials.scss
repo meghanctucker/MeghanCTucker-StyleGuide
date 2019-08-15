@@ -5,7 +5,7 @@ Font Variables
 //font-family: roboto, sans serif;
 //font-weight: 100, 300, 400, 700;
 
-$primary-font-family: roboto, sans-serif;
+$primary-font-family: Helvetica Neue, sans-serif;
 
 $thin-font-weight: 100;
 $light-font-weight: 300;
@@ -15,8 +15,9 @@ $bold-font-weight: 700;
 /**********
 Color Variables
 ***********/
-
-$fountain-blue: #52bab3;
+$main-font-color: grey;
+$alt-color: #66f5bc;
+$turquise-blue: #45e0f7;
 $emerald: #5ece75;
 $sunglo: #e67478;
 $coral: #ff784f;
@@ -26,13 +27,14 @@ $purple-majesty: #9279c3;
 //UI colors
 
 $ui-colors: (
-  default: $fountain-blue,
+  default: $turquise-blue,
   success: $emerald,
   error: $sunglo,
-  warning: $coral, 
+  warning: $coral,
   info: $purple-majesty
 );
 
 /**********
 Breakpoint Variables
+#52bab3
 ***********/
