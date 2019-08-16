@@ -556,7 +556,11 @@ Buttons
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
-  width: 90%;
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  border: 0;
 }
 
 .container {
@@ -572,6 +576,11 @@ Buttons
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  min-width: 100%;
 }
 
 .headline--secondary, .headline--primary, .card {
@@ -587,14 +596,17 @@ Buttons
 
 p {
   font-family: Helvetica Neue, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: grey;
+  line-height: 1.7em;
 }
 
 .headline--primary {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 700;
   color: #66f5bc;
+  padding-left: 15px;
+  max-width: 75%;
 }
 
 .headline--secondary {
@@ -604,10 +616,15 @@ p {
 }
 
 .blockquote {
+  border-radius: 5px;
   border-left: 10px solid #66f5bc;
-  margin: 1.5em 10px;
+  margin: 30px 20px 50px 20px;
   padding: 0.5em 10px;
   color: grey;
+  font-size: 1.7em;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .nav__item a {
@@ -625,7 +642,7 @@ p {
   background-color: #66f5bc;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .link {
@@ -633,30 +650,49 @@ p {
   text-decoration: none;
 }
 
-.form__label--hidden {
+.form__input {
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 10px;
-  border-bottom: 10px solid #66f5bc;
+  padding-bottom: 5px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid #66f5bc;
   font-family: Helvetica Neue, sans-serif;
   font-weight: 400;
   color: #4d4d4d;
 }
 
-.form__input {
+.form__label--hidden {
   visibility: hidden;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .nav__item {
   padding: 5px;
   margin: 5px;
+}
+
+.nav__item:hover {
+  background-color: #66f5bc;
+}
+
+.img--avatar {
+  max-width: 199px;
+  max-height: 199px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.img--frame {
+  border: 1px solid #b3b3b3;
+  padding: 15px;
 }
 
 .btn {

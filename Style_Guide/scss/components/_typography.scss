@@ -1,13 +1,16 @@
 p {
   font-family: $primary-font-family;
-  font-weight: $reg-font-weight;
+  font-weight: $light-font-weight;
   color: $main-font-color;
+  line-height: 1.7em;
 }
 
 .headline--primary {
   font-family: $primary-font-family;
   font-weight: $bold-font-weight;
   color: $alt-color;
+  padding-left: 15px;
+  max-width: 75%;
 }
 
 .headline--secondary {
@@ -17,10 +20,15 @@ p {
 }
 
 .blockquote {
+  border-radius: 5px;
   border-left: 10px solid $alt-color;
-  margin: 1.5em 10px;
+  margin: 30px 20px 50px 20px;
   padding: 0.5em 10px;
   color: $main-font-color;
+  font-size: 1.7em;
+  font-family: $primary-font-family;
+  font-weight: $thin-font-weight;
+  font-style: italic;
 }
 
 .nav__item a {
@@ -39,7 +47,7 @@ p {
   background-color: $alt-color;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0px;;
 }
 
 .link{
@@ -47,17 +55,20 @@ p {
   text-decoration: none;
 }
 
-.form__label--hidden{
+.form__input{
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 10px;
-  border-bottom: 10px solid $alt-color;
+  padding-bottom: 5px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid $alt-color;
   font-family: $primary-font-family;
   font-weight: $reg-font-weight;
   color: darken($main-font-color, 20%);
 
 }
 
-.form__input {
+.form__label--hidden {
   visibility: hidden;
 }
