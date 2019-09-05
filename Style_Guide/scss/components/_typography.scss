@@ -38,18 +38,6 @@ p {
   font-weight: $light-font-weight;
 }
 
-//need to change to target all .grid__col--# with .theme__colors class
-.grid__col--12.theme__colors {
-  font-family: $primary-font-family;
-  font-weight: $reg-font-weight;
-  color: darken($main-font-color, 10%);
-  text-align: left;
-  background-color: $alt-color;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0px;;
-}
-
 .link{
   color: $turquise-blue;
   text-decoration: none;

@@ -31,10 +31,22 @@ $ui-colors: (
   success: $emerald,
   error: $sunglo,
   warning: $coral,
-  info: $purple-majesty
+  info: $purple-majesty,
+  12: $alt-color,
+  6: darken($turquise-blue, 20%),
+  4: lighten($turquise-blue, 20%),
+  3: lighten($purple-majesty, 20%),
+  5: lighten($emerald, 20%),
+  7: lighten($sunglo, 20%),
+  8: lighten($coral, 20%)
 );
 
 /**********
 Breakpoint Variables
 #52bab3
 ***********/
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1050px;
