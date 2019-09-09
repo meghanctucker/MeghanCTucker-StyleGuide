@@ -40,6 +40,12 @@ centered
 /**********
 Media Queries
 ***********/
+@mixin doubly($margin: 1em) {
+  & +& {
+    margin-left: $margin;
+    @content;
+  }
+}
 
 /**********
 Flexbox Settings

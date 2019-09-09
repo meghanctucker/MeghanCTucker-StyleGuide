@@ -1,6 +1,6 @@
 .btn {
     @include bg-colors($ui-colors);
-    display: block;
+    // display: block;
   &--default {
     @extend %btn;
   }
@@ -15,5 +15,11 @@
   }
   &--info{
     @extend %btn;
+  }
+}
+
+[class^= "btn--"] {
+  @media (min-width: 1px) and (max-width: 768px) {
+    width: 100%;
   }
 }
