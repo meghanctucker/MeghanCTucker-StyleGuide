@@ -32,13 +32,14 @@
   text-align: left;
 }
 
-@media (min-width: 769px) { }
+@media (min-width: 769px) {
 @for $i from 1 through $g-col-count {
   $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
   $target: ($g-col-width * $i) + ($g-gutter-width *( $i - 1));
   .grid__col--#{$i} {
     width: percentage($target / $context);
   }
+}
 }
 
 // Column styles
@@ -58,14 +59,5 @@
     &:last-of-type {
       float: right;
     }
-  }
-}
-
-.grid__col--12 {
-  @media (min-width: 769px) {
-    flex-direction: row;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

@@ -613,7 +613,7 @@ Buttons
   text-align: left;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px 0px;
+  margin: 10px 10px;
 }
 
 [class^=grid__col--]:not(.theme__colors) {
@@ -640,58 +640,55 @@ Buttons
   text-align: left;
 }
 
-.grid__col--1 {
-  width: 6.6666666667%;
-}
+@media (min-width: 769px) {
+  .grid__col--1 {
+    width: 7.2289156627%;
+  }
 
-.grid__col--2 {
-  width: 14.4444444444%;
-}
+  .grid__col--2 {
+    width: 15.6626506024%;
+  }
 
-.grid__col--3 {
-  width: 22.2222222222%;
-}
+  .grid__col--3 {
+    width: 24.0963855422%;
+  }
 
-.grid__col--4 {
-  width: 30%;
-}
+  .grid__col--4 {
+    width: 32.5301204819%;
+  }
 
-.grid__col--5 {
-  width: 37.7777777778%;
-}
+  .grid__col--5 {
+    width: 40.9638554217%;
+  }
 
-.grid__col--6 {
-  width: 45.5555555556%;
-}
+  .grid__col--6 {
+    width: 49.3975903614%;
+  }
 
-.grid__col--7 {
-  width: 53.3333333333%;
-}
+  .grid__col--7 {
+    width: 57.8313253012%;
+  }
 
-.grid__col--8 {
-  width: 61.1111111111%;
-}
+  .grid__col--8 {
+    width: 66.265060241%;
+  }
 
-.grid__col--9 {
-  width: 68.8888888889%;
-}
+  .grid__col--9 {
+    width: 74.6987951807%;
+  }
 
-.grid__col--10 {
-  width: 76.6666666667%;
-}
+  .grid__col--10 {
+    width: 83.1325301205%;
+  }
 
-.grid__col--11 {
-  width: 84.4444444444%;
-}
+  .grid__col--11 {
+    width: 91.5662650602%;
+  }
 
-.grid__col--12 {
-  width: 92.2222222222%;
+  .grid__col--12 {
+    width: 100%;
+  }
 }
-
-.grid__col--13 {
-  width: 100%;
-}
-
 @media (min-width: 1px) and (max-width: 768px) {
   [class^=gid__col--] {
     margin-top: em(12px);
@@ -707,7 +704,7 @@ Buttons
     padding-right: 10px;
   }
   [class^=gid__col--] + [class^=gid__col--] {
-    margin-left: 1.1111111111%;
+    margin-left: 1.2048192771%;
   }
   [class^=gid__col--]:last-of-type {
     float: right;
