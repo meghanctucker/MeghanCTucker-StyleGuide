@@ -5,7 +5,8 @@
   margin: 10px;
   @media (min-width: 769px) {
       flex-direction: row;
-      float:right;
+      float: right;
+      margin-right: 50px;
   }
 }
 
@@ -16,4 +17,6 @@
 
 .nav__item:hover{
   background-color: $alt-color;
+  border-radius: 0.35em;
+  padding: 5px;
 }

@@ -610,10 +610,14 @@ Buttons
   font-family: Helvetica Neue, sans-serif;
   font-weight: 400;
   color: #676767;
-  text-align: left;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 10px;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^=grid__col--].theme__colors {
+    text-align: left;
+  }
 }
 
 [class^=grid__col--]:not(.theme__colors) {
@@ -633,6 +637,13 @@ Buttons
 @media (min-width: 769px) {
   .grid__row {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    min-width: 90%;
   }
 }
 
@@ -711,15 +722,6 @@ Buttons
   }
 }
 
-@media (min-width: 769px) {
-  .grid__col--12 {
-    flex-direction: row;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 p {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 300;
@@ -792,6 +794,7 @@ p {
   .nav {
     flex-direction: row;
     float: right;
+    margin-right: 50px;
   }
 }
 
@@ -802,18 +805,23 @@ p {
 
 .nav__item:hover {
   background-color: #66f5bc;
+  border-radius: 0.35em;
+  padding: 5px;
 }
 
 .img--avatar {
-  max-width: 199px;
-  max-height: 199px;
-  padding: 10px;
+  max-width: 90%;
   margin: 10px auto;
 }
 
 .img--frame {
   border: 1px solid #b3b3b3;
   padding: 15px;
+  max-width: 90%;
+}
+
+.img--logo {
+  max-width: 90%;
 }
 
 .btn--default {
