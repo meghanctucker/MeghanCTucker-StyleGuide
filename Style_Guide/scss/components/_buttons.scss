@@ -21,5 +21,17 @@
 [class^= "btn--"] {
   @media (min-width: 1px) and (max-width: 768px) {
     width: 100%;
-  }
+ }
+ @media (min-width: 769px) and (max-width: 1050px) {
+   //padding: 5px 20px;
+   //margin: 5px 10px;
+   // I want the buttons to take up as much space as possible
+   //provided they are all even
+   //provided they are all on the same line.
+   width: 100%;
+   margin-left: 3.5%;
+   margin-right: 3.5%;
+  // padding-left: 5%;
+  // padding-right: 5%;
+ }
 }
