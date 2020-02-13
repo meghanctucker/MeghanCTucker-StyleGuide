@@ -1,4 +1,7 @@
 .form{
-  display: flex;
-  flex-direction: column;
+  @include column;
+  width: 100%;
+  margin-left: 2em;
+  margin-top: 1em;
+  padding-left: 1em;
 }

@@ -10,14 +10,6 @@ Color Mixins
   }
 }
 
-//@mixin grid-bg-colors($map){
-  //@each $theme, $color in $map{
-//{$theme}{
-  //    background-color:$color;
-    //}
-  //}
-//}
-
 /**********
 centered
 ***********/
@@ -39,6 +31,26 @@ centered
 /**********
 Media Queries
 ***********/
+@mixin Large-row-break {
+  @media (min-width: $br-l) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    min-width: 90%;
+  }
+}
+
+@mixin text-left {
+  @media (min-width: $br-xs) and (max-width: $br-s) {
+    text-align: left;
+  }
+}
+
 @mixin doubly($margin: 1em) {
   & +& {
     margin-left: $margin;
@@ -49,3 +61,7 @@ Media Queries
 /**********
 Flexbox Settings
 ***********/
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}

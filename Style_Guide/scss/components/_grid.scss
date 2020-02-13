@@ -8,9 +8,7 @@
 
 [class^= "grid__col--"].theme__colors {
   @include side;
-  @media (min-width: 1px) and (max-width: 768px) {
-    text-align: left;
-  }
+  @include text-left;
 }
 
 [class^= "grid__col--"]:not(.theme__colors) {
@@ -18,7 +16,7 @@
 }
 
 .grid__row {
-  @media (min-width: 1px) and (max-width: 768px) {
+  @media (min-width: $br-xs) and (max-width: $br-s) {
     text-align: center;
     padding-top: 10px;
     margin-top: 10px;
@@ -26,23 +24,14 @@
     margin-bottom: 20px;
     min-width: 90%;
   }
-  @media (min-width: 769px) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-    margin-top: 0px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    min-width: 90%;
-  }
+  @include Large-row-break;
 }
 
-.headline--secondary, .headline--primary, .card{
-  text-align: left;
-}
+//.headline--secondary, .headline--primary, .card{
+  //text-align: left;
+//}
 
-@media (min-width: 769px) {
+@media (min-width: $br-l) {
 @for $i from 1 through $g-col-count {
   $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
   $target: ($g-col-width * $i) + ($g-gutter-width *( $i - 1));
@@ -55,12 +44,12 @@
 // Column styles
 
 [class^="gid__col--"] {
-  @media (min-width: 1px) and (max-width: 768px) {
+  @media (min-width: $br-xs) and (max-width: $br-s) {
     margin-top: em(12px);
     margin-bottom: em(12px);
-    flex-direction: column;
+    @include column;
   }
-  @media (min-width: 769px) {
+  @media (min-width: $br-l) {
     @include doubly(percentage($g-gutter-width / $context));
     float: left;
     min-height: 1px;
@@ -78,10 +67,10 @@
 }
 
 .grid__col--12 {
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  @include Large-row-break;
+  //  * display: flex;
+  //  flex-direction: row;
+  //  *justify-content: center;
   //  @include doubly(percentage($g-gutter-width / $context));
   //  float: left;
   //  min-height: 1px;
@@ -90,5 +79,4 @@
   //  &:last-of-type {
   //    float: right;
   //  }
-  }
 }

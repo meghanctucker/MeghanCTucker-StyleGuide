@@ -13,6 +13,14 @@ $reg-font-weight: 400;
 $bold-font-weight: 700;
 
 /**********
+font sizes
+**********/
+
+$sml-font-size: 1em;
+$md-font-size:  1.2em;
+$lg-font-size: 1.4em;
+
+/**********
 Color Variables
 ***********/
 $main-font-color: grey;
@@ -45,6 +53,9 @@ $ui-colors: (
 Breakpoint Variables
 #52bab3
 ***********/
+$br-xs: 1px;
+$br-s: 768px;
+$br-l: 769px;
 //grid
 
 $g-col-width: 60px;
