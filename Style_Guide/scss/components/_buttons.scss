@@ -1,37 +1,26 @@
 .btn {
     @include bg-colors($ui-colors);
-    // display: block;
-  &--default {
-    @extend %btn;
-  }
-  &--success{
-    @extend %btn;
-  }
-  &--error{
-    @extend %btn;
-  }
-  &--warning{
-    @extend %btn;
-  }
-  &--info{
-    @extend %btn;
-  }
+    @include m(default);
+    @include m(success);
+    @include m(error);
+    @include m(warning);
+    @include m(info);
 }
 
 [class^= "btn--"] {
-  //@media (min-width: 1px) and (max-width: 768px) {
-  //  width: 100%;
- //}
-// @media (min-width: 769px){
+  @media (min-width: 1px) and (max-width: 768px) {
+    width: 100%;
+ }
+ //@media (min-width: 769px){
    //padding: 5px 20px;
    //margin: 5px 10px;
    // I want the buttons to take up as much space as possible
    //provided they are all even
    //provided they are all on the same line.
-   width: 100%;
+   //width: 100%;
    //margin-left: 3.5%;
    //margin-right: 3.5%;
   // padding-left: 5%;
   // padding-right: 5%;
+  }
  }
-}

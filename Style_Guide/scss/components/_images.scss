@@ -1,14 +1,14 @@
-.img--avatar {
-  max-width: 90%;
-  margin: 10px auto;
-}
-
-.img--frame{
-  border: 1px solid lighten($main-font-color, 20%);
-  padding: 15px;
-  max-width: 90%;
-}
-
-.img--logo {
-  max-width: 90%;
+.img{
+  &--avatar{
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  &--frame{
+    border: 1px solid lighten($main-font-color, 20%);
+    padding: 15px;
+    max-width: 90%;
+  }
+  &--logo{
+    max-width: 90%;
+  }
 }

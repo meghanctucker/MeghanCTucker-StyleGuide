@@ -525,6 +525,12 @@ Color Variables
 Breakpoint Variables
 #52bab3
 ***********/
+/**********
+BEM Mixins
+***********/
+/**********
+font Mixins
+***********/
 /*********
 Color Mixins
 ***********/
@@ -640,6 +646,7 @@ Buttons
 @media (min-width: 769px) {
   .grid__row {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     padding-top: 10px;
@@ -648,10 +655,6 @@ Buttons
     margin-bottom: 5px;
     min-width: 90%;
   }
-}
-
-.headline--secondary, .headline--primary, .card {
-  text-align: left;
 }
 
 @media (min-width: 769px) {
@@ -731,34 +734,23 @@ Buttons
   margin-right: 30px;
 }
 
-@media (min-width: 769px) {
-  .grid__col--12 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-    margin-top: 0px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    min-width: 90%;
-  }
-}
-
 p {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 300;
   color: grey;
-  line-height: 1.7em;
   font-size: 1em;
+  line-height: 1.7em;
+  text-align: left;
 }
 
 .headline--primary {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 700;
   color: #66f5bc;
+  font-size: 1.4em;
+  text-align: left;
   padding-left: 15px;
   max-width: 75%;
-  font-size: 1.4em;
 }
 
 .headline--secondary {
@@ -766,25 +758,28 @@ p {
   font-weight: 100;
   color: grey;
   font-size: 1em;
+  text-align: left;
 }
 
 .blockquote {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 100;
+  color: grey;
+  font-size: 1.2em;
+  text-align: left;
   border-radius: 5px;
   border-left: 10px solid #66f5bc;
   margin: 30px 20px 50px 20px;
   padding: 0.5em 10px;
-  color: grey;
-  font-size: 1.2em;
-  font-family: Helvetica Neue, sans-serif;
-  font-weight: 100;
   font-style: italic;
 }
 
 .nav__item a {
-  text-decoration: none;
-  color: grey;
   font-family: Helvetica Neue, sans-serif;
   font-weight: 300;
+  color: grey;
+  text-align: left;
+  text-decoration: none;
 }
 
 .link {
@@ -793,17 +788,16 @@ p {
 }
 
 .form__input {
-  text-align: left;
-  padding-left: 20px;
-  padding-bottom: 5px;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 5px solid #66f5bc;
   font-family: Helvetica Neue, sans-serif;
   font-weight: 400;
   color: #4d4d4d;
-  margin-left: 1em;
+  text-align: left;
+  border-bottom: 5px solid #66f5bc;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-bottom: 5px;
+  padding-left: 20px;
 }
 
 .form__label--hidden {
@@ -813,6 +807,7 @@ p {
 @media (min-width: 769px) {
   .nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     padding-top: 10px;
@@ -822,12 +817,10 @@ p {
     min-width: 90%;
   }
 }
-
 .nav__item {
   padding: 5px;
   margin: 5px;
 }
-
 .nav__item:hover {
   background-color: #66f5bc;
   border-radius: 0.35em;
@@ -838,13 +831,11 @@ p {
   max-width: 90%;
   margin: 10px auto;
 }
-
 .img--frame {
   border: 1px solid #b3b3b3;
   padding: 15px;
   max-width: 90%;
 }
-
 .img--logo {
   max-width: 90%;
 }
@@ -892,9 +883,8 @@ p {
 }
 @media (min-width: 769px) {
   [class^=btn--] {
-    width: 100%;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
+    padding: 5px 20px;
+    margin: 5px 10px;
   }
 }
 
@@ -902,9 +892,11 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 2em;
-  margin-top: 1em;
-  padding-left: 1em;
+}
+@media (min-width: 769px) {
+  .form {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

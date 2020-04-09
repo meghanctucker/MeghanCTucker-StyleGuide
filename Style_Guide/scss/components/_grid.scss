@@ -32,13 +32,13 @@
 //}
 
 @media (min-width: $br-l) {
-@for $i from 1 through $g-col-count {
-  $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
-  $target: ($g-col-width * $i) + ($g-gutter-width *( $i - 1));
-  .grid__col--#{$i} {
-    width: percentage($target / $context);
-  }
-}
+  @for $i from 1 through $g-col-count {
+    $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+    $target: ($g-col-width * $i) + ($g-gutter-width *( $i - 1));
+      .grid__col--#{$i} {
+        width: percentage($target / $context);
+        }
+      }
 }
 
 // Column styles
@@ -51,13 +51,13 @@
   }
   @media (min-width: $br-l) {
     @include doubly(percentage($g-gutter-width / $context));
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
+   float: left;
+   min-height: 1px;
+   padding-left: 10px;
+   padding-right: 10px;
     &:last-of-type {
-      float: right;
-    }
+     float: right;
+   }
   }
 }
 
@@ -66,11 +66,11 @@
   margin-right: 30px;
 }
 
-.grid__col--12 {
-  @include Large-row-break;
+//.grid__col--12 {
+//  @include Large-row-break;
   //  * display: flex;
   //  flex-direction: row;
-  //  *justify-content: center;
+  //  justify-content: space-around;
   //  @include doubly(percentage($g-gutter-width / $context));
   //  float: left;
   //  min-height: 1px;
@@ -79,4 +79,4 @@
   //  &:last-of-type {
   //    float: right;
   //  }
-}
+//}

@@ -1,3 +1,32 @@
+/**********
+BEM Mixins
+***********/
+@mixin m($modifier){
+  &--#{$modifier}{
+    @extend %btn;
+  }
+}
+
+/**********
+font Mixins
+***********/
+
+@mixin typog(
+ $family: null,
+ $weight: null,
+ $colors: null,
+ $f-size: null,
+ $l-height: null,
+ $t-align: left){
+   font-family: $family;
+   font-weight: $weight;
+   color: $colors;
+   font-size: $f-size;
+   line-height: $l-height;
+   text-align: $t-align;
+ }
+
+
 /*********
 Color Mixins
 ***********/
