@@ -55,13 +55,29 @@ centered
     color: darken($main-font-color, 10%);
     border-radius: 5px;
     padding: 10px;
-    margin: 10px 10px;;
+    margin: 10px 10px;
 }
 /**********
 Media Queries
 ***********/
+@mixin mq($break){
+  @if $break == "small" {
+    @media (min-width: $br-xs) and (Max-width: $br-s){
+      @content;
+    }
+  }
+    @else if $break == "large" {
+      @media (min-width: $br-l){
+        @content;
+      }
+    }
+    @else {
+      @error "cannot retrieve #{$break}"
+    }
+}
+
 @mixin Large-row-break {
-  @media (min-width: $br-l) {
+  @include mq(large) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,7 +91,7 @@ Media Queries
 }
 
 @mixin text-left {
-  @media (min-width: $br-xs) and (max-width: $br-s) {
+  @include mq(small) {
     text-align: left;
   }
 }

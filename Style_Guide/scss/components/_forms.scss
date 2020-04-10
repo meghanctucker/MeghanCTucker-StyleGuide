@@ -1,7 +1,7 @@
 .form{
   @include column;
   width: 100%;
-  @media (min-width: $br-l){
-    width: 90%;
-  }
+//  @include mq(large) {
+//    width: 90%;
+//  }
 }

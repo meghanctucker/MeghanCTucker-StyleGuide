@@ -8,7 +8,7 @@
 }
 
 [class^= "btn--"] {
-  @media (min-width: 1px) and (max-width: 768px) {
+  @include mq(small) {
     width: 100%;
  }
  //@media (min-width: 769px){
@@ -22,5 +22,5 @@
    //margin-right: 3.5%;
   // padding-left: 5%;
   // padding-right: 5%;
-  }
+//  }
  }

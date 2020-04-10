@@ -623,7 +623,7 @@ Buttons
   padding: 10px;
   margin: 10px 10px;
 }
-@media (min-width: 1px) and (max-width: 768px) {
+@media (min-width: 1px) and (Max-width: 768px) {
   [class^=grid__col--].theme__colors {
     text-align: left;
   }
@@ -633,7 +633,7 @@ Buttons
   background-color: white;
 }
 
-@media (min-width: 1px) and (max-width: 768px) {
+@media (min-width: 1px) and (Max-width: 768px) {
   .grid__row {
     text-align: center;
     padding-top: 10px;
@@ -706,7 +706,7 @@ Buttons
     width: 100%;
   }
 }
-@media (min-width: 1px) and (max-width: 768px) {
+@media (min-width: 1px) and (Max-width: 768px) {
   [class^=gid__col--] {
     margin-top: em(12px);
     margin-bottom: em(12px);
@@ -876,15 +876,9 @@ p {
 .btn--8 {
   background-color: #ffc6b5;
 }
-@media (min-width: 1px) and (max-width: 768px) {
+@media (min-width: 1px) and (Max-width: 768px) {
   [class^=btn--] {
     width: 100%;
-  }
-}
-@media (min-width: 769px) {
-  [class^=btn--] {
-    padding: 5px 20px;
-    margin: 5px 10px;
   }
 }
 
@@ -892,11 +886,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-@media (min-width: 769px) {
-  .form {
-    width: 90%;
-  }
 }
 
 /*# sourceMappingURL=output.css.map */

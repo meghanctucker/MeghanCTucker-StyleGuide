@@ -16,7 +16,7 @@
 }
 
 .grid__row {
-  @media (min-width: $br-xs) and (max-width: $br-s) {
+  @include mq(small) {
     text-align: center;
     padding-top: 10px;
     margin-top: 10px;
@@ -31,7 +31,7 @@
   //text-align: left;
 //}
 
-@media (min-width: $br-l) {
+@include mq(large) {
   @for $i from 1 through $g-col-count {
     $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
     $target: ($g-col-width * $i) + ($g-gutter-width *( $i - 1));
@@ -44,14 +44,14 @@
 // Column styles
 
 [class^="gid__col--"] {
-  @media (min-width: $br-xs) and (max-width: $br-s) {
+  @include mq(small) {
     margin-top: em(12px);
     margin-bottom: em(12px);
     @include column;
   }
-  @media (min-width: $br-l) {
-    @include doubly(percentage($g-gutter-width / $context));
-   float: left;
+  @include mq(large) { //THIS IS THE ONE THAT BROKE
+   @include doubly(percentage($g-gutter-width / $context));
+  float: left;
    min-height: 1px;
    padding-left: 10px;
    padding-right: 10px;
