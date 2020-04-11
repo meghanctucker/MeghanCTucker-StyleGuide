@@ -49,7 +49,7 @@
     margin-bottom: em(12px);
     @include column;
   }
-  @include mq(large) { //THIS IS THE ONE THAT BROKE
+  @include mq(large) {
    @include doubly(percentage($g-gutter-width / $context));
   float: left;
    min-height: 1px;
@@ -66,7 +66,12 @@
   margin-right: 30px;
 }
 
-//.grid__col--12 {
+.grid__col--12 {
+  @include mq(large){
+    display: flex;
+    justify-content: space-around;
+  }
+}
 //  @include Large-row-break;
   //  * display: flex;
   //  flex-direction: row;

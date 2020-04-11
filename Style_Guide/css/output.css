@@ -734,6 +734,13 @@ Buttons
   margin-right: 30px;
 }
 
+@media (min-width: 769px) {
+  .grid__col--12 {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 p {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 300;
@@ -886,6 +893,21 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+@media (min-width: 769px) {
+  .form {
+    width: 90%;
+    padding-top: 1em;
+    padding-left: 2em;
+  }
+  .form__input {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0.5em;
+  }
+  .form .btn--default {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,7 +1,17 @@
 .form{
   @include column;
   width: 100%;
-//  @include mq(large) {
-//    width: 90%;
-//  }
+  @include mq(large) {
+    width: 90%;
+    padding-top: 1em;
+    padding-left: 2em;
+    &__input{
+      padding-left: 1em;
+      padding-right: 1em;
+      margin: .5em;
+    }
+    .btn--default{
+      width: 100%;
+    }
+  }
 }
