@@ -1,8 +1,8 @@
 .form{
   @include column;
-  width: 100%;
+  @include width($full-width);
   @include mq(large) {
-    width: 90%;
+    @include width($med-width);
     padding-top: 1em;
     padding-left: 2em;
     &__input{
@@ -11,7 +11,7 @@
       margin: .5em;
     }
     .btn--default{
-      width: 100%;
+      @include width($full-width);
     }
   }
 }

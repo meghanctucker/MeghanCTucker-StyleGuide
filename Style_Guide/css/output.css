@@ -512,6 +512,10 @@ ul {
 /**********
 In this file only apply styles to 3 elements: Universal, UL, P
 ***********/
+input {
+  border: none;
+}
+
 /**********
 Font Variables
 ***********/
@@ -535,7 +539,7 @@ font Mixins
 Color Mixins
 ***********/
 /**********
-centered
+Placement
 ***********/
 /**********
 Media Queries
@@ -741,7 +745,7 @@ Buttons
   }
 }
 
-p {
+.card {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 300;
   color: grey;
@@ -770,7 +774,7 @@ p {
 
 .blockquote {
   font-family: Helvetica Neue, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: grey;
   font-size: 1.2em;
   text-align: left;
@@ -834,17 +838,15 @@ p {
   padding: 5px;
 }
 
-.img--avatar {
+.img {
   max-width: 90%;
+}
+.img--avatar {
   margin: 10px auto;
 }
 .img--frame {
   border: 1px solid #b3b3b3;
   padding: 15px;
-  max-width: 90%;
-}
-.img--logo {
-  max-width: 90%;
 }
 
 .btn--default {
