@@ -1,12 +1,14 @@
  .nav{
   @include Large-row-break;
+  padding: 10px;
+  margin: 10px;
   &__item{
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
   }
   &__item:hover{
     background-color: $alt-color;
     border-radius: 0.35em;
-    padding: 5px;
+    padding: 10px;
   }
 }

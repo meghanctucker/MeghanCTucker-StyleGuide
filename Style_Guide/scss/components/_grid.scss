@@ -25,21 +25,17 @@
     min-width: 90%;
   }
   @include Large-row-break;
-}
-
-//.headline--secondary, .headline--primary, .card{
-  //text-align: left;
-//}
-
-@include mq(large) {
-  @for $i from 1 through $g-col-count {
-    $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
-    $target: ($g-col-width * $i) + ($g-gutter-width *( $i - 1));
-      .grid__col--#{$i} {
-        width: percentage($target / $context);
+  @include mq(large) {
+    @for $i from 1 through $g-col-count {
+      $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+      $target: ($g-col-width * $i) + ($g-gutter-width *( $i - 1));
+        .grid__col--#{$i} {
+          width: percentage($target / $context);
+          }
         }
-      }
-}
+  }
+
+ }
 
 // Column styles
 

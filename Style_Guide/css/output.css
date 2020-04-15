@@ -516,6 +516,11 @@ input {
   border: none;
 }
 
+button {
+  border: none;
+  background-color: white;
+}
+
 /**********
 Font Variables
 ***********/
@@ -546,18 +551,6 @@ Media Queries
 ***********/
 /**********
 Flexbox Settings
-***********/
-/**********
-links partials
-***********/
-/**********
-images partials
-***********/
-/**********
-Headlines Partials
-***********/
-/**********
-Nav Items
 ***********/
 /**********
 Buttons
@@ -660,56 +653,45 @@ Buttons
     min-width: 90%;
   }
 }
-
 @media (min-width: 769px) {
-  .grid__col--1 {
+  .grid__row .grid__col--1 {
     width: 7.2289156627%;
   }
-
-  .grid__col--2 {
+  .grid__row .grid__col--2 {
     width: 15.6626506024%;
   }
-
-  .grid__col--3 {
+  .grid__row .grid__col--3 {
     width: 24.0963855422%;
   }
-
-  .grid__col--4 {
+  .grid__row .grid__col--4 {
     width: 32.5301204819%;
   }
-
-  .grid__col--5 {
+  .grid__row .grid__col--5 {
     width: 40.9638554217%;
   }
-
-  .grid__col--6 {
+  .grid__row .grid__col--6 {
     width: 49.3975903614%;
   }
-
-  .grid__col--7 {
+  .grid__row .grid__col--7 {
     width: 57.8313253012%;
   }
-
-  .grid__col--8 {
+  .grid__row .grid__col--8 {
     width: 66.265060241%;
   }
-
-  .grid__col--9 {
+  .grid__row .grid__col--9 {
     width: 74.6987951807%;
   }
-
-  .grid__col--10 {
+  .grid__row .grid__col--10 {
     width: 83.1325301205%;
   }
-
-  .grid__col--11 {
+  .grid__row .grid__col--11 {
     width: 91.5662650602%;
   }
-
-  .grid__col--12 {
+  .grid__row .grid__col--12 {
     width: 100%;
   }
 }
+
 @media (min-width: 1px) and (Max-width: 768px) {
   [class^=gid__col--] {
     margin-top: em(12px);
@@ -792,6 +774,9 @@ Buttons
   text-align: left;
   text-decoration: none;
 }
+.nav__item a:hover {
+  color: white;
+}
 
 .link {
   color: #45e0f7;
@@ -815,6 +800,10 @@ Buttons
   visibility: hidden;
 }
 
+.nav {
+  padding: 10px;
+  margin: 10px;
+}
 @media (min-width: 769px) {
   .nav {
     display: flex;
@@ -829,13 +818,13 @@ Buttons
   }
 }
 .nav__item {
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 .nav__item:hover {
   background-color: #66f5bc;
   border-radius: 0.35em;
-  padding: 5px;
+  padding: 10px;
 }
 
 .img {
